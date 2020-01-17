@@ -7,8 +7,8 @@ var arrayCrit = [];
 //初期化関数
 var init = () => {
 	crit = document.getElementById("crit").value;
-	if(crit == 0){
-		crit = 10;
+	if(crit <= 3){
+		crit = 3;
 	}
 	rollNumber = document.getElementById("rollNumber").value;
 	if(rollNumber <= 0){
