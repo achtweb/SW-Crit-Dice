@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Roll 2d6</title>
+	<link rel="stylesheet" type="text/css" src="main.css">
+</head>
+<body>
+	<div id="wrap">
+		<h2>SW Critical Test</h2>
+		<p>C値 <input type="number" id="crit" value="10" min="7" max="13"></p>
+		<p>ダイスを振る回数 <input type="number" id="rollNumber" value="1000" step="1000"></p>
+		<button type="button" name="roll" onClick="compute()">Dice roll</button>
+
+		<table id="result">
+			<tr>
+				<th>クリティカルした数</th>
+				<th>出た回数</th>
+			</tr>
+		</table>
+	</div>
+
+	<script src="roll.js"></script>
+</body>
+</html>
